@@ -9,6 +9,11 @@ import scrapy
 
 
 class DemoItem(scrapy.Item):
-    # define the fields for your item here like:
+    # define the fields for your item here like: 定义你的项目字段名
     # name = scrapy.Field()
-    pass
+    url = scrapy.Field()
+    title = scrapy.Field()
+    content = scrapy.Field()
+
+    image_urls = scrapy.Field()
+    # pass

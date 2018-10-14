@@ -18,8 +18,9 @@ NEWSPIDER_MODULE = 'Demo.spiders'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'Demo (+http://www.yourdomain.com)'
 
-# Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+# Obey robots.txt rules 遵守robots.txt的规则
+# ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -64,9 +65,12 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'Demo.pipelines.DemoPipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'Demo.pipelines.DemoPipeline': 300,
+    'scrapy.pipelines.images.ImagesPipeline': 1,
+}
+IMAGES_URLS_FIELD = 'image_urls'
+IMAGES_STORE = r'./output'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -88,3 +92,6 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+# 指定输出log文件，这样运行时就不会显示log内容
+LOG_FILE = "scrapy.log"
