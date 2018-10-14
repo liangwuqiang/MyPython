@@ -28,7 +28,7 @@ class GetKeyword:
         # elif 'www.cnblogs.com' in url:  # 博客园
         #     dict['title'] = '.postTitle2'
         #     dict['content'] = '.blogpost-body'
-        elif 'www.cnblogs.com' in url:  # 博客园
+        elif 'www.cnblogs.com' in url:  # 博客园 ===============
             # https://www.cnblogs.com/kongzhagen/p/6549053.html/
             self.dict['title'] = '#cb_post_title_url::text'
             self.dict['content'] = '#cnblogs_post_body'
