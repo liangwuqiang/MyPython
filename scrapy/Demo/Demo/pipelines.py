@@ -40,8 +40,12 @@ class DemoPipeline(object):
         title = item['title']
         content = item['content']
 
-        for image_url in item['image_urls']:
-            content = content.replace(image_url, 'full/' + self.sha1(image_url) + '.jpg')
+        for image_url in item['raw_image_urls']:
+            full_image_url = image_url
+            if image_url.startswith('http') is False:
+                # image_url = 'https:' + image_url
+                full_image_url = 'https://www.helplib.com' + image_url
+            content = content.replace(image_url, 'full/' + self.sha1(full_image_url) + '.jpg')
 
         html = self.format_html(url, title, content)
         filename = 'output/' + title + '.html'

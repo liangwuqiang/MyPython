@@ -28,17 +28,21 @@ class GetKeyword:
         # elif 'www.cnblogs.com' in url:  # 博客园
         #     dict['title'] = '.postTitle2'
         #     dict['content'] = '.blogpost-body'
-        elif 'www.cnblogs.com' in url:  # 博客园 ===============
-            # https://www.cnblogs.com/kongzhagen/p/6549053.html/
-            self.dict['title'] = '#cb_post_title_url::text'
-            self.dict['content'] = '#cnblogs_post_body'
-            # self.dict['content'] = '.blogpost-body'
         elif 'www.jianshu.com' in url:  # 简书
             self.dict['title'] = '.title'
             self.dict['content'] = '.article'
         elif 'www.maiziedu.com' in url:  # 麦子学院
             self.dict['title'] = '.cont h1'
             self.dict['content'] = '.cont'
+        elif 'www.cnblogs.com' in url:  # 博客园 ===============
+            # https://www.cnblogs.com/kongzhagen/p/6549053.html/
+            self.dict['title'] = '#cb_post_title_url::text'
+            self.dict['content'] = '#cnblogs_post_body'
+            # self.dict['content'] = '.blogpost-body'
+        elif 'www.helplib.com' in url:  # 帮酷 ===============
+            # https://www.helplib.com/linux/article_13528
+            self.dict['title'] = '#article_subject a::text'
+            self.dict['content'] = '#article_html_content'
         else:
             print('当前网页没能提取到关键字...')
 

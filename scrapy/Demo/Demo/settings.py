@@ -69,7 +69,7 @@ ITEM_PIPELINES = {
     'Demo.pipelines.DemoPipeline': 300,
     'scrapy.pipelines.images.ImagesPipeline': 1,
 }
-IMAGES_URLS_FIELD = 'image_urls'
+IMAGES_URLS_FIELD = 'full_image_urls'
 IMAGES_STORE = r'./output'
 
 # Enable and configure the AutoThrottle extension (disabled by default)

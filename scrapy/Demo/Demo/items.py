@@ -15,5 +15,6 @@ class DemoItem(scrapy.Item):
     title = scrapy.Field()
     content = scrapy.Field()
 
-    image_urls = scrapy.Field()
+    raw_image_urls = scrapy.Field()
+    full_image_urls = scrapy.Field()
     # pass
