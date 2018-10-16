@@ -8,8 +8,9 @@ class ExampleSpider(scrapy.Spider):
     # allowed_domains = ['example.com']
     # start_urls = ['http://example.com/']
     start_urls = [
-        # 'https://www.cnblogs.com/kongzhagen/p/6549053.html/',
-        'https://www.helplib.com/linux/article_13528',
+        # 'https://www.imooc.com/article/21840',
+        # 'https://www.imooc.com/article/21839',
+        'https://blog.csdn.net/qq_19330913/article/details/80468494',  # 如何在Ubuntu 18.04上安装和使用PostgreSQL
     ]
 
     def parse(self, response):  # <class 'scrapy.http.response.html.HtmlResponse'>
