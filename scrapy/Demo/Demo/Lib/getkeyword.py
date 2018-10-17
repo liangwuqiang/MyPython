@@ -43,6 +43,10 @@ class GetKeyword:
             # https://www.helplib.com/linux/article_13528
             self.dict['title'] = '#article_subject a::text'
             self.dict['content'] = '#article_html_content'
+        elif 'www.imooc.com' in url:  # 手记 ===============
+            # https://www.imooc.com/article/21840
+            self.dict['title'] = '.js-title::text'  # d-t js-title
+            self.dict['content'] = '.detail-content'  # detail-content js-lookimg
         else:
             print('当前网页没能提取到关键字...')
 

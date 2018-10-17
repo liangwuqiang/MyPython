@@ -9,9 +9,18 @@ class ExampleSpider(scrapy.Spider):
     # start_urls = ['http://example.com/']
     start_urls = [
         # 'https://www.cnblogs.com/kongzhagen/p/6549053.html/',
-        'https://www.helplib.com/linux/article_13528',
+        # 'https://www.helplib.com/linux/article_13528',
+        'https://www.imooc.com/article/21838',
+        # 'https://www.imooc.com/article/21839',
+        # 'https://www.imooc.com/article/21840',
     ]
 
+    def parse(self, response):
+        self.log('调试文件')
+        # with open('temp.txt', 'w') as f:
+        #     f.write(response.text)
+        pass
+"""
     def parse(self, response):  # <class 'scrapy.http.response.html.HtmlResponse'>
         dict = GetKeyword().get_css_keyword(response.url)
         key_title = dict['title']
@@ -28,15 +37,18 @@ class ExampleSpider(scrapy.Spider):
 
             item['full_image_urls'] = []
             item['raw_image_urls'] = response.xpath('//img//@src').extract()
-            for image_url in item['raw_image_urls']:
-                if image_url.startswith('http') is False:
-                    # image_url = 'https:' + image_url
-                    image_url = 'https://www.helplib.com' + image_url
-                item['full_image_urls'].append(image_url)
-            # 调试
-            for image_url in item['full_image_urls']:
-                print(image_url)
+            if len(item['raw_image_urls']) != 0:
+                for image_url in item['raw_image_urls']:
+                    if image_url.startswith('http') is False:
+                        # image_url = 'https:' + image_url
+                        image_url = 'https://www.helplib.com' + image_url
+                    item['full_image_urls'].append(image_url)
+                # 调试
+                for image_url in item['full_image_urls']:
+                    print(image_url)
         except Exception as reason:
             print('程序出错: ', reason)
 
         yield item
+"""
+
