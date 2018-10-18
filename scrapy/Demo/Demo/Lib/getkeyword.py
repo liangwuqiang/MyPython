@@ -47,6 +47,10 @@ class GetKeyword:
             # https://www.imooc.com/article/21840
             self.dict['title'] = '.js-title::text'  # d-t js-title
             self.dict['content'] = '.detail-content'  # detail-content js-lookimg
+        elif 'scrapy-chs.readthedocs.io' in url:  # Scrapy 0.24.6 文档 ===============
+            # https://scrapy-chs.readthedocs.io/zh_CN/0.24/topics/selectors.html
+            self.dict['title'] = '.section h1::text'  # .section
+            self.dict['content'] = '.section'  # .section
         else:
             print('当前网页没能提取到关键字...')
 

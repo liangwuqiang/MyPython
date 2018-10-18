@@ -8,15 +8,10 @@ class ExampleSpider(scrapy.Spider):
     # allowed_domains = ['example.com']
     # start_urls = ['http://example.com/']
     start_urls = [
-        'https://blog.csdn.net/qq_19330913/article/details/80468494',  # 如何在Ubuntu 18.04上安装和使用PostgreSQL
+        'https://scrapy-chs.readthedocs.io/zh_CN/0.24/topics/selectors.html',
+        # 'https://blog.csdn.net/qq_19330913/article/details/80468494',  # 如何在Ubuntu 18.04上安装和使用PostgreSQL
     ]
 
-    def parse(self, response):
-        self.log('调试文件')
-        # with open('temp.txt', 'w') as f:
-        #     f.write(response.text)
-        pass
-"""
     def parse(self, response):  # <class 'scrapy.http.response.html.HtmlResponse'>
         dict = GetKeyword().get_css_keyword(response.url)
         key_title = dict['title']
@@ -46,5 +41,4 @@ class ExampleSpider(scrapy.Spider):
             print('程序出错: ', reason)
 
         yield item
-"""
 
