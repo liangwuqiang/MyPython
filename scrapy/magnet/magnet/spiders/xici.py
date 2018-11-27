@@ -15,8 +15,8 @@ class BturlSpider(scrapy.Spider):
                   'file:///home/ubuntu/Documents/xici2.html',
                   'file:///home/ubuntu/Documents/xici3.html',
                   ]
-    with open('ip.txt', 'w') as f:
-        f.write('')
+    # with open('ip.txt', 'w') as f:
+    #     f.write('')
 
     def parse(self, response):
         # items = []

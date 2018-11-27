@@ -6,6 +6,9 @@
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
+import logging
+from proxy import GetIp
+ips = GetIp().get_ips()
 
 
 class MagnetSpiderMiddleware(object):
@@ -64,6 +67,8 @@ class MagnetDownloaderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the downloader middleware does not modify the
     # passed objects.
+    http_n = 0     # http请求的计数
+    https_n = 0    # https请求的计数
 
     @classmethod
     def from_crawler(cls, crawler):
@@ -75,6 +80,19 @@ class MagnetDownloaderMiddleware(object):
     """处理请求"""
     def process_request(self, request, spider):
         # 通过下载中间件调用每个请求
+        if request.url.startswith("http://"):
+            n = self.http_n
+            n = n if n < len(ips['http']) else 0
+            request.meta['proxy'] = "http://%s:%d" % (ips['http'][n][0], int(ips['http'][n][1]))
+            logging.info('Squence - http: %s - %s' % (n, str(ips['http'][n])))
+            self.http_n = n+1
+
+        if request.url.startswith("https://"):
+            n = self.https_n
+            n = n if n < len(ips['https']) else 0
+            request.meta['proxy'] = "https://%s:%d" % (ips['https'][n][0], int(ips['https'][n][1]))
+            logging.info('Squence - https: %s - %s' % (n, str(ips['https'][n])))
+            self.https_n = n+1
 
         # Must either:
         # - return None: continue processing this request
