@@ -1,3 +1,4 @@
+import codecs
 from urllib.parse import quote
 # -*- coding: utf-8 -*-
 
@@ -96,7 +97,7 @@ class MagnetPipeline(object):
                         </table>
                     </body></html>"""
             html = html_template.format(content=string_bulid)
-            with open('bturl.html', 'w') as f:
+            with codecs.open('bturl.html', 'w', encoding='utf-8') as f:
                 f.write(html)
             print('程序运行完毕！！！')
 
