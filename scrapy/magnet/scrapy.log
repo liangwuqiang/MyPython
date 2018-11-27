@@ -59623,3 +59623,999 @@ KeyError: 'baidu'
  'scheduler/enqueued/memory': 69,
  'start_time': datetime.datetime(2018, 11, 27, 8, 4, 6, 496758)}
 2018-11-27 16:04:14 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-11-27 17:08:47 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: magnet)
+2018-11-27 17:08:47 [scrapy.utils.log] INFO: Versions: lxml 4.1.0.0, libxml2 2.9.4, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.3 |Anaconda custom (64-bit)| (default, Oct 15 2017, 03:27:45) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.2.0 (OpenSSL 1.0.2l  25 May 2017), cryptography 2.0.3, Platform Windows-10-10.0.17134-SP0
+2018-11-27 17:08:47 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'magnet', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'magnet.spiders', 'SPIDER_MODULES': ['magnet.spiders']}
+2018-11-27 17:08:47 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-27 17:08:48 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-27 17:08:48 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-27 17:08:48 [scrapy.middleware] INFO: Enabled item pipelines:
+['magnet.pipelines.MagnetPipeline']
+2018-11-27 17:08:48 [scrapy.core.engine] INFO: Spider opened
+2018-11-27 17:08:48 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-27 17:08:48 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-11-27 17:08:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/search/2160p%20mkv_length_3.html> (referer: None)
+2018-11-27 17:08:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/search/2160p%20mkv_length_1.html> (referer: None)
+2018-11-27 17:08:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/7413161D93646A9D4826F0E7B4B6D20190CC11D7.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_3.html)
+2018-11-27 17:08:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/A3D5E913796B2D44ED5BA5B68F6FDDB3CA0545D4.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_3.html)
+2018-11-27 17:08:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/69B886B35068D58A057B4462CF1BBBB36324B257.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_3.html)
+2018-11-27 17:08:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=forrest%20gump%20> (referer: None)
+2018-11-27 17:08:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/search/2160p%20mkv_length_2.html> (referer: None)
+2018-11-27 17:08:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=forrest%20gump%20>
+{'baidu': 'forrest gump ',
+ 'click': '1878',
+ 'ctime': '2018-06-13',
+ 'fanyi': '阿甘',
+ 'filename': 'Forrest.Gump.1994.UHD.BDRemux.2160p.4K.UltraHD.HEVC.HDR.IVA(RUS.UKR.ENG).ExKinoRay.mkv',
+ 'length': '91.9 GB',
+ 'link': 'magnet:?xt=urn:btih:7413161D93646A9D4826F0E7B4B6D20190CC11D7'}
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/E95E20C81EC198FD2E1E4A8C1E532E439CB642C0.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_3.html)
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=aliens_> (referer: None)
+2018-11-27 17:08:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=aliens_>
+{'baidu': 'aliens_',
+ 'click': '165',
+ 'ctime': '2018-05-28',
+ 'fanyi': 'aliens_',
+ 'filename': 'Aliens_1986_Directors_Cut_2160p_4K_SDR_WEB-DL_AMZ_HHD.mkv',
+ 'length': '94.4 GB',
+ 'link': 'magnet:?xt=urn:btih:69B886B35068D58A057B4462CF1BBBB36324B257'}
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/C9BFF492E9E81B0DFF2FBAC8D66E258F5C62A7A7.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_3.html)
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=ghostbusters%20ii%20> (referer: None)
+2018-11-27 17:08:50 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=ghostbusters%20ii%20> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=avatar%20> (referer: None)
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/6EEE5ED342EC9E10293C4EEDEBCCF311BF9E4CB3.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_3.html)
+2018-11-27 17:08:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=ghostbusters%20ii%20>
+{'baidu': 'ghostbusters ii ',
+ 'click': '720',
+ 'ctime': '2017-04-17',
+ 'fanyi': '捉鬼敢死队2',
+ 'filename': 'Ghostbusters.II.1989.2160p.WEB-DL.8xRus.Ukr.Eng.TrollUHD-ULTRAHDCLUB.mkv',
+ 'length': '103.9 GB',
+ 'link': 'magnet:?xt=urn:btih:E95E20C81EC198FD2E1E4A8C1E532E439CB642C0'}
+2018-11-27 17:08:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=avatar%20>
+{'baidu': 'avatar ',
+ 'click': '3',
+ 'ctime': '2018-11-26',
+ 'fanyi': '《阿凡达》',
+ 'filename': 'Avatar.2009.Extended.UHD.Re-Grade.4000nit.2160p.HEVC.HDR.mkv',
+ 'length': '101.9 GB',
+ 'link': 'magnet:?xt=urn:btih:A3D5E913796B2D44ED5BA5B68F6FDDB3CA0545D4'}
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/2845E8EABB19306AA52C7363EF4FB53B0792217E.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_3.html)
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/4A5C7ACA043648109EA55D452D5E779B53196757.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_3.html)
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/5FD6172D4BBDF64BCE29D28BFD68D2DD9F49B704.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_3.html)
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/3B68E98EC4522D7A2C3DAE1614BB32D3E8A41155.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_3.html)
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=saving%20private%20ryan%20> (referer: None)
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/5DEFC01CE8510988F00615C02E41F175F1DEB3C3.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_3.html)
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/10093BA1F1E86658D0EC39708CF1E097AA83DB02.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_3.html)
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/500F668900B36CD297D753729D5AD8073320777D.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_1.html)
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=watchmen%20> (referer: None)
+2018-11-27 17:08:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=saving%20private%20ryan%20>
+{'baidu': 'saving private ryan ',
+ 'click': '5',
+ 'ctime': '2018-10-05',
+ 'fanyi': '拯救大兵瑞恩',
+ 'filename': 'Saving.Private.Ryan.1998.2160p.BDREMUX.HEVC.HDR.IVA(11xRUS.2xUKR.ENG).ExKinoRay.mkv',
+ 'length': '104.2 GB',
+ 'link': 'magnet:?xt=urn:btih:6EEE5ED342EC9E10293C4EEDEBCCF311BF9E4CB3'}
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/14BD82A8A83A48F394177E36C2817F207DF15C52.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_1.html)
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/5C0372A9D620AD2B87312408A8A32183F85E0F3B.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_2.html)
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/6FA9CE5B9A08CAB64DC268B0512F950AC896569D.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_2.html)
+2018-11-27 17:08:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=watchmen%20>
+{'baidu': 'watchmen ',
+ 'click': '1951',
+ 'ctime': '2018-04-24',
+ 'fanyi': '守望的人',
+ 'filename': 'Watchmen.2009.The.Ultimate.Cut.UHD.BDRemux.2160p.HEVC.HDR.IVA(4xRUS.ENG).ExKinoRay.mkv',
+ 'length': '95.7 GB',
+ 'link': 'magnet:?xt=urn:btih:2845E8EABB19306AA52C7363EF4FB53B0792217E'}
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/B5EF5E0B49FD9370D6E39B86EA1B9693E469F2E2.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_2.html)
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=my%20best%20friend%27s%20wedding%20> (referer: None)
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=fury%20> (referer: None)
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/32BC10297FB6165DC02DACF565CDD4A33E5A12F0.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_3.html)
+2018-11-27 17:08:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=my%20best%20friend%27s%20wedding%20>
+{'baidu': "my best friend's wedding ",
+ 'click': '985',
+ 'ctime': '2017-03-30',
+ 'fanyi': '我最好的朋友的婚礼',
+ 'filename': "My.Best.Friend's.Wedding.1997.2160p.WEB-DL.2xRus.2xUkr.Eng.mkv",
+ 'length': '100.5 GB',
+ 'link': 'magnet:?xt=urn:btih:10093BA1F1E86658D0EC39708CF1E097AA83DB02'}
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/959A6A8EA8730CE8736EB839587C1CAA8FECC77F.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_2.html)
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/52CE23F4D532B12B80EC30A9D30D8A5370ACF00C.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_2.html)
+2018-11-27 17:08:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=fury%20>
+{'baidu': 'fury ',
+ 'click': '245',
+ 'ctime': '2016-05-15',
+ 'fanyi': '愤怒',
+ 'filename': 'Fury.2014.2160p.WEB-DL.3xRus.Ukr.Eng.TrollUHD-ULTRAHDCLUB.mkv',
+ 'length': '116.4 GB',
+ 'link': 'magnet:?xt=urn:btih:500F668900B36CD297D753729D5AD8073320777D'}
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20bridge%20on%20the%20river%20kwai%20> (referer: None)
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=fight%20club%20> (referer: None)
+2018-11-27 17:08:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/4FC481642590C70E6DDDE18C1727457ECB02F902.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_2.html)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/A57AE65752452CE57723908B7B7AE1E49BE33185.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_2.html)
+2018-11-27 17:08:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20bridge%20on%20the%20river%20kwai%20>
+{'baidu': 'the bridge on the river kwai ',
+ 'click': '495',
+ 'ctime': '2017-04-03',
+ 'fanyi': '桂河大桥',
+ 'filename': 'The.Bridge.on.the.River.Kwai.1957.2160p.WEB-DL.3xRus.Ukr.Eng.TrollUHD-ULTRAHDCLUB.mkv',
+ 'length': '107.2 GB',
+ 'link': 'magnet:?xt=urn:btih:B5EF5E0B49FD9370D6E39B86EA1B9693E469F2E2'}
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/769B333547BF5B4C137D11FC3121CE1B23B604C3.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_2.html)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/6DFA4CED20D48D0E581E318B9EDC8B35D63FF8BD.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_1.html)
+2018-11-27 17:08:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=fight%20club%20>
+{'baidu': 'fight club ',
+ 'click': '169',
+ 'ctime': '2018-09-26',
+ 'fanyi': '搏击俱乐部',
+ 'filename': 'Fight.Club.1999.UHD.Re-Grade.6000nit.2160p.HEVC.HDR.IVA(RUS.UKR.ENG).ExKinoRay.mkv',
+ 'length': '104.9 GB',
+ 'link': 'magnet:?xt=urn:btih:6FA9CE5B9A08CAB64DC268B0512F950AC896569D'}
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=men%20in%20black%20> (referer: None)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/A390FF5E19A80FD589F4B2A8F6456DD2E7F47FE1.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_2.html)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/ED9D08819BF8A91BA6D0234ACB5A6D2032E62A8B.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_1.html)
+2018-11-27 17:08:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=men%20in%20black%20>
+{'baidu': 'men in black ',
+ 'click': '873',
+ 'ctime': '2015-11-12',
+ 'fanyi': '黑衣人',
+ 'filename': 'Men.in.Black.1997.2160p.WEB-DL.3xRus.Eng.mkv',
+ 'length': '109.3 GB',
+ 'link': 'magnet:?xt=urn:btih:959A6A8EA8730CE8736EB839587C1CAA8FECC77F'}
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/FEA8AF04251AB2DE967407801EF8D19822FFC3C0.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_2.html)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/F661BD9AC3C06D4DA5E285A1172AE5890DF00A72.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_2.html)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/9AC91CD6C3521E591D85D25E3EC11C8A9925A47C.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_2.html)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/5F7C8C25DD17B77A650D3DC2B002639A1B89C707.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_2.html)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=titanic%20> (referer: None)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/14DA430E8D7F940A8E7781E476EE40BCDE92E721.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_1.html)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=jurassic%20park%20> (referer: None)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20lord%20of%20the%20rings%20> (referer: None)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/D595F46390E2C51123CA8DD56891BE1EE2AE3226.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_1.html)
+2018-11-27 17:08:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=titanic%20>
+{'baidu': 'titanic ',
+ 'click': '736',
+ 'ctime': '2018-09-05',
+ 'fanyi': '《泰坦尼克号》',
+ 'filename': 'Titanic.1997.UHD.Remux.2160p.HEVC.HDR.IVA(RUS.UKR.ENG).ExKinoRay.mkv',
+ 'length': '112.8 GB',
+ 'link': 'magnet:?xt=urn:btih:A390FF5E19A80FD589F4B2A8F6456DD2E7F47FE1'}
+2018-11-27 17:08:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=jurassic%20park%20>
+{'baidu': 'jurassic park ',
+ 'click': '1272',
+ 'ctime': '2018-05-26',
+ 'fanyi': '《侏罗纪公园》',
+ 'filename': 'Jurassic.Park.1993.Lic.BDRemux.2160p.4K.UltraHD.HEVC.HDR.IVA(14xRUS.2xUKR.ENG).ExKinoRay.mkv',
+ 'length': '115.1 GB',
+ 'link': 'magnet:?xt=urn:btih:FEA8AF04251AB2DE967407801EF8D19822FFC3C0'}
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/F140154E9E81D99DF4ECFB7C676578426040D01F.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_1.html)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/2A1F18A9201B070CBD50BA321C1BF461A4F5A91F.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_1.html)
+2018-11-27 17:08:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20lord%20of%20the%20rings%20>
+{'baidu': 'the lord of the rings ',
+ 'click': '771',
+ 'ctime': '2018-09-17',
+ 'fanyi': '《魔戒》',
+ 'filename': 'The.Lord.of.the.Rings.2001.The.Fellowship.of.the.Ring.UHD.Re-Grade.4000nit.2160p.HEVC.HDR.IVA(RUS.UKR.ENG).ExKinoRay.mkv',
+ 'length': '113.3 GB',
+ 'link': 'magnet:?xt=urn:btih:F661BD9AC3C06D4DA5E285A1172AE5890DF00A72'}
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/7B6525F8E9BD05A95C5D5D96294EB83E15A930C3.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_1.html)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/0D1F01478B2FBD42447E12DBD8512380D4EDC04F.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_3.html)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/EFF751D5A529715E3B9F2A9F98B02266D263E40B.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_1.html)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=lawrence%20of%20arabia%20%5B%D0%BB%D0%BE%D1%83%D1%80%D0%B5%D0%BD%D1%81%20%D0%B0%D1%80%D0%B0%D0%B2%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%5D%20web-dl%20> (referer: None)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=lawrence%20of%20arabia%20> (referer: None)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/F0CB71BAC2BD8470A16576F08AE8EF88DF3F2C40.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_1.html)
+2018-11-27 17:08:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=lawrence%20of%20arabia%20%5B%D0%BB%D0%BE%D1%83%D1%80%D0%B5%D0%BD%D1%81%20%D0%B0%D1%80%D0%B0%D0%B2%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%5D%20web-dl%20>
+{'baidu': 'lawrence of arabia [лоуренс аравийский] web-dl ',
+ 'click': '679',
+ 'ctime': '2018-06-25',
+ 'fanyi': 'лоуренс[аравийскийla',
+ 'filename': 'Lawrence of Arabia [Лоуренс Аравийский] WEB-DL 2160p.mkv',
+ 'length': '120.7 GB',
+ 'link': 'magnet:?xt=urn:btih:2A1F18A9201B070CBD50BA321C1BF461A4F5A91F'}
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20lost%20world%20jurassic%20park%20> (referer: None)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/5484184C0C9BD8B2A6A7C7DCB22D222381D30C2C.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_1.html)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/9FE34633C5C5B9CC103B605513BA139808A3834A.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_1.html)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/0E9A3272715E2ED62B3C1EE9332EA8FE680E48EC.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_3.html)
+2018-11-27 17:08:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=lawrence%20of%20arabia%20>
+{'baidu': 'lawrence of arabia ',
+ 'click': '84',
+ 'ctime': '2017-06-12',
+ 'fanyi': '阿拉伯的劳伦斯',
+ 'filename': 'Lawrence.of.Arabia.1962.2160p.WEB-ULTRAHDCLUB.mkv',
+ 'length': '120.7 GB',
+ 'link': 'magnet:?xt=urn:btih:7B6525F8E9BD05A95C5D5D96294EB83E15A930C3'}
+2018-11-27 17:08:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20lost%20world%20jurassic%20park%20>
+{'baidu': 'the lost world jurassic park ',
+ 'click': '1224',
+ 'ctime': '2018-05-25',
+ 'fanyi': '失去的世界的侏罗纪公园',
+ 'filename': 'The.Lost.World.Jurassic.Park.1997.Lic.BDRemux.2160p.4K.UltraHD.HEVC.HDR.IVA(14xRUS.3xUKR.ENG).ExKinoRay.mkv',
+ 'length': '99.7 GB',
+ 'link': 'magnet:?xt=urn:btih:0D1F01478B2FBD42447E12DBD8512380D4EDC04F'}
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/6363D3550D86E1F94CF7BCE716F2A278F79E73FE.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_1.html)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=ghostbusters%20> (referer: None)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20fifth%20element%20> (referer: None)
+2018-11-27 17:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/7F20772B573F2FB7C82C11F9D357911E4F5B9427.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_2.html)
+2018-11-27 17:08:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=ghostbusters%20>
+{'baidu': 'ghostbusters ',
+ 'click': '3458',
+ 'ctime': '2015-11-10',
+ 'fanyi': '捉鬼敢死队',
+ 'filename': 'Ghostbusters.1984.2160p.WEB-DL.10xRus.3xUkr.Eng.TrollUHD-ULTRAHDCLUB.mkv',
+ 'length': '136.4 GB',
+ 'link': 'magnet:?xt=urn:btih:F0CB71BAC2BD8470A16576F08AE8EF88DF3F2C40'}
+2018-11-27 17:08:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20fifth%20element%20>
+{'baidu': 'the fifth element ',
+ 'click': '3536',
+ 'ctime': '2015-12-01',
+ 'fanyi': '第五元素',
+ 'filename': 'The.Fifth.Element.1997.2160p.WEB-DL.2xRus.Eng.TrollUHD-ULTRAHDCLUB.mkv',
+ 'length': '90.8 GB',
+ 'link': 'magnet:?xt=urn:btih:0E9A3272715E2ED62B3C1EE9332EA8FE680E48EC'}
+2018-11-27 17:08:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/0577E3A8CD391D8C3A273AC418C804E690D8035A.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_1.html)
+2018-11-27 17:08:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=corazones%20de%20acero%20> (referer: None)
+2018-11-27 17:08:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=corazones%20de%20acero%20>
+{'baidu': 'corazones de acero ',
+ 'click': '80',
+ 'ctime': '2015-12-26',
+ 'fanyi': '心的钢',
+ 'filename': 'Corazones de Acero 2014 2160p 4K x265 HEVC WEB-DL DTSHD MA '
+             'HDTeam.mkv',
+ 'length': '114.3 GB',
+ 'link': 'magnet:?xt=urn:btih:7F20772B573F2FB7C82C11F9D357911E4F5B9427'}
+2018-11-27 17:08:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=%D0%B1%D1%8D%D1%82%D0%BC%D0%B5%D0%BD%20%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2%20%D1%81%D1%83%D0%BF%D0%B5%D1%80%D0%BC%D0%B5%D0%BD%D0%B0%20%20%D0%BD%D0%B0%20%D0%B7%D0%B0%D1%80%D0%B5%20%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%B5%D0%B4%D0%BB%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D0%B8%20> (referer: None)
+2018-11-27 17:08:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=%D0%B1%D1%8D%D1%82%D0%BC%D0%B5%D0%BD%20%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2%20%D1%81%D1%83%D0%BF%D0%B5%D1%80%D0%BC%D0%B5%D0%BD%D0%B0%20%20%D0%BD%D0%B0%20%D0%B7%D0%B0%D1%80%D0%B5%20%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%B5%D0%B4%D0%BB%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D0%B8%20>
+{'baidu': 'бэтмен против супермена  на заре справедливости ',
+ 'click': '1063',
+ 'ctime': '2018-07-16',
+ 'fanyi': '蝙蝠侠超人正义之诉',
+ 'filename': 'Бэтмен против Супермена. На заре '
+             'справедливости.2016.UHD.BluRay.Remux.2160p.mkv',
+ 'length': '119.5 GB',
+ 'link': 'magnet:?xt=urn:btih:0577E3A8CD391D8C3A273AC418C804E690D8035A'}
+2018-11-27 17:08:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/71B18BEF36AEA4319D804083C31CB98873C59BF4.html> (referer: https://www.bturl.so/search/2160p%20mkv_length_2.html)
+2018-11-27 17:08:52 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-11-27 17:08:52 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 25663,
+ 'downloader/request_count': 69,
+ 'downloader/request_method_count/GET': 69,
+ 'downloader/response_bytes': 125970,
+ 'downloader/response_count': 69,
+ 'downloader/response_status_count/200': 69,
+ 'dupefilter/filtered': 24,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 11, 27, 9, 8, 52, 421052),
+ 'item_scraped_count': 21,
+ 'log_count/DEBUG': 92,
+ 'log_count/INFO': 7,
+ 'request_depth_max': 2,
+ 'response_received_count': 69,
+ 'scheduler/dequeued': 69,
+ 'scheduler/dequeued/memory': 69,
+ 'scheduler/enqueued': 69,
+ 'scheduler/enqueued/memory': 69,
+ 'start_time': datetime.datetime(2018, 11, 27, 9, 8, 48, 173395)}
+2018-11-27 17:08:52 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-11-27 17:27:29 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: magnet)
+2018-11-27 17:27:29 [scrapy.utils.log] INFO: Versions: lxml 4.1.0.0, libxml2 2.9.4, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.3 |Anaconda custom (64-bit)| (default, Oct 15 2017, 03:27:45) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.2.0 (OpenSSL 1.0.2l  25 May 2017), cryptography 2.0.3, Platform Windows-10-10.0.17134-SP0
+2018-11-27 17:27:29 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'magnet', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'magnet.spiders', 'SPIDER_MODULES': ['magnet.spiders']}
+2018-11-27 17:27:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-27 17:27:30 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-27 17:27:30 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-27 17:27:30 [scrapy.middleware] INFO: Enabled item pipelines:
+['magnet.pipelines.MagnetPipeline']
+2018-11-27 17:27:30 [scrapy.core.engine] INFO: Spider opened
+2018-11-27 17:27:30 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-27 17:27:30 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-11-27 17:27:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/search/2160p_length_63.html> (referer: None)
+2018-11-27 17:27:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/search/2160p_length_62.html> (referer: None)
+2018-11-27 17:27:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/search/2160p_length_61.html> (referer: None)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/search/2160p_length_64.html> (referer: None)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/150D6CAEE98CEE1B1C5E3BC2F0A76C38F09D9B3F.html> (referer: https://www.bturl.so/search/2160p_length_63.html)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/240E82497CDDC2D4A2C05C15562D31A25D173647.html> (referer: https://www.bturl.so/search/2160p_length_63.html)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/22C60D92199E0ED14CB8549A6086D5F901C6B542.html> (referer: https://www.bturl.so/search/2160p_length_63.html)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/search/2160p_length_60.html> (referer: None)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/search/2160p_length_65.html> (referer: None)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=bill%20nye%20saves%20the%20world> (referer: None)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/01AAD37B9E5214DDB5B73990D2752684D04935AC.html> (referer: https://www.bturl.so/search/2160p_length_63.html)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/E78261E17E600C31C35F91698CD9E0B25C708A33.html> (referer: https://www.bturl.so/search/2160p_length_63.html)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/081CAAA32361FFC416503B03245FAC3080422441.html> (referer: https://www.bturl.so/search/2160p_length_63.html)
+2018-11-27 17:27:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=bill%20nye%20saves%20the%20world>
+{'baidu': 'bill nye saves the world',
+ 'click': '604',
+ 'ctime': '2018-07-18',
+ 'fanyi': '比尔奈拯救世界',
+ 'filename': 'Bill.Nye.Saves.the.World.S03.2160p.NF.WEBRip.DD5.1.x264-TrollUHD[rartv]',
+ 'length': '74.3 GB',
+ 'link': 'magnet:?xt=urn:btih:150D6CAEE98CEE1B1C5E3BC2F0A76C38F09D9B3F'}
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/DA60F8A22B6A56803FFEEC71B7752CD8376EF97F.html> (referer: https://www.bturl.so/search/2160p_length_63.html)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/84375B9B6446AFAD09EBEEF3DF4982D0ABD1BF95.html> (referer: https://www.bturl.so/search/2160p_length_63.html)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=red%20> (referer: None)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=godzilla%20%5B%D0%B3%D0%BE%D0%B4%D0%B7%D0%B8%D0%BB%D0%BB%D0%B0%5D%20web-dl%20> (referer: None)
+2018-11-27 17:27:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=red%20>
+{'baidu': 'red ',
+ 'click': '953',
+ 'ctime': '2018-02-27',
+ 'fanyi': '红色的',
+ 'filename': 'RED.2.2013.2160p.BluRay.REMUX.HEVC.DTS-HD.MA.TrueHD.7.1.Atmos-FGT',
+ 'length': '74.4 GB',
+ 'link': 'magnet:?xt=urn:btih:081CAAA32361FFC416503B03245FAC3080422441'}
+2018-11-27 17:27:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=godzilla%20%5B%D0%B3%D0%BE%D0%B4%D0%B7%D0%B8%D0%BB%D0%BB%D0%B0%5D%20web-dl%20>
+{'baidu': 'godzilla [годзилла] web-dl ',
+ 'click': '400',
+ 'ctime': '2018-07-13',
+ 'fanyi': '[годзиллаgodzilla we',
+ 'filename': 'Godzilla [Годзилла] WEB-DL 2160p.mkv',
+ 'length': '74.2 GB',
+ 'link': 'magnet:?xt=urn:btih:01AAD37B9E5214DDB5B73990D2752684D04935AC'}
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/2CF70079D4240C44D0E451EFC5B354CD8C1700ED.html> (referer: https://www.bturl.so/search/2160p_length_63.html)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/F3F7F9E7A0DE8C203D9576DBEA3F4AA2FEDA7854.html> (referer: https://www.bturl.so/search/2160p_length_63.html)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=reboot%20the%20guardian%20code> (referer: None)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=hacksaw%20ridge%20> (referer: None)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/D8FD0C1C1152A92887981A10402FE9DB95EA05BD.html> (referer: https://www.bturl.so/search/2160p_length_63.html)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=warrior%20> (referer: None)
+2018-11-27 17:27:32 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=red%20> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/E883830F15A5264A66ABFB9C7D4CE73317625412.html> (referer: https://www.bturl.so/search/2160p_length_62.html)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=escape%20plan%20> (referer: None)
+2018-11-27 17:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/95C6B7F877B9940F0F1E77BFFEA161B65E13B9C1.html> (referer: https://www.bturl.so/search/2160p_length_63.html)
+2018-11-27 17:27:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=reboot%20the%20guardian%20code>
+{'baidu': 'reboot the guardian code',
+ 'click': '552',
+ 'ctime': '2018-10-06',
+ 'fanyi': '重新启动《卫报》代码',
+ 'filename': 'Reboot.The.Guardian.Code.S01.2160p.NF.WEBRip.x264.DD5.1-TrollUHD[rartv]',
+ 'length': '74.5 GB',
+ 'link': 'magnet:?xt=urn:btih:84375B9B6446AFAD09EBEEF3DF4982D0ABD1BF95'}
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/CF651AFF043A146C5A2C72C6AC35B793283AA6F3.html> (referer: https://www.bturl.so/search/2160p_length_61.html)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/1BE3BED5B5FC237C5C5C9755B017C800C76C1152.html> (referer: https://www.bturl.so/search/2160p_length_61.html)
+2018-11-27 17:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=hacksaw%20ridge%20>
+{'baidu': 'hacksaw ridge ',
+ 'click': '2859',
+ 'ctime': '2017-10-24',
+ 'fanyi': '钢锯脊',
+ 'filename': 'Hacksaw.Ridge.2016.2160p.BluRay.REMUX.HEVC.DTS-HD.MA.TrueHD.7.1.Atmos-FGT',
+ 'length': '74.5 GB',
+ 'link': 'magnet:?xt=urn:btih:E78261E17E600C31C35F91698CD9E0B25C708A33'}
+2018-11-27 17:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=warrior%20>
+{'baidu': 'warrior ',
+ 'click': '221',
+ 'ctime': '2017-12-30',
+ 'fanyi': '战士',
+ 'filename': 'Warrior.2011.2160p.BluRay.REMUX.HEVC.DTS-HD.MA.TrueHD.7.1.Atmos-FGT',
+ 'length': '74.2 GB',
+ 'link': 'magnet:?xt=urn:btih:240E82497CDDC2D4A2C05C15562D31A25D173647'}
+2018-11-27 17:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=escape%20plan%20>
+{'baidu': 'escape plan ',
+ 'click': '672',
+ 'ctime': '2018-07-18',
+ 'fanyi': '逃跑计划',
+ 'filename': 'Escape.Plan.2013.2160p.BluRay.HEVC.TrueHD.7.1.Atmos-WhiteRhino',
+ 'length': '74.4 GB',
+ 'link': 'magnet:?xt=urn:btih:DA60F8A22B6A56803FFEEC71B7752CD8376EF97F'}
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/70158558F203FCD09BA104B6ABF19E661B6FA807.html> (referer: https://www.bturl.so/search/2160p_length_64.html)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=jupiter%20ascending%20> (referer: None)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=%E8%9C%98%E8%9B%9B%E4%BE%A0> (referer: None)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=ozark> (referer: None)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/63EB2A97FCE54F36D7EEE27A4C431FC00FE86B6B.html> (referer: https://www.bturl.so/search/2160p_length_61.html)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/431E1FE7FC64B53E114051C6F7774B1E57BE5344.html> (referer: https://www.bturl.so/search/2160p_length_64.html)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=hell%20or%20high%20water%20> (referer: None)
+2018-11-27 17:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=jupiter%20ascending%20>
+{'baidu': 'jupiter ascending ',
+ 'click': '820',
+ 'ctime': '2018-03-14',
+ 'fanyi': '木星提升',
+ 'filename': 'Jupiter.Ascending.2015.2160p.BluRay.REMUX.HEVC.DTS-HD.MA.TrueHD.7.1.Atmos-FGT',
+ 'length': '75.0 GB',
+ 'link': 'magnet:?xt=urn:btih:1BE3BED5B5FC237C5C5C9755B017C800C76C1152'}
+2018-11-27 17:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=%E8%9C%98%E8%9B%9B%E4%BE%A0>
+{'baidu': '蜘蛛侠',
+ 'click': '4',
+ 'ctime': '2018-10-28',
+ 'fanyi': 'spider-man',
+ 'filename': '蜘蛛侠3.Spider-Man.3.2007.2160p.UHD.Blu-ray.HEVC.TrueHD.7.1-SUPERSIZE',
+ 'length': '75.2 GB',
+ 'link': 'magnet:?xt=urn:btih:CF651AFF043A146C5A2C72C6AC35B793283AA6F3'}
+2018-11-27 17:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=ozark>
+{'baidu': 'ozark',
+ 'click': '33',
+ 'ctime': '2018-10-21',
+ 'fanyi': '欧扎克',
+ 'filename': 'Ozark.S02.2160p.WEBRip.HEVC.HDR.KvK.CasStudio.TV',
+ 'length': '74.3 GB',
+ 'link': 'magnet:?xt=urn:btih:95C6B7F877B9940F0F1E77BFFEA161B65E13B9C1'}
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=law%20abiding%20citizen%20> (referer: None)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=valerian%20and%20the%20city%20of%20a%20thousand%20planets%20> (referer: None)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/FF8BB3B36247834D25F193DC8CD8D7623D72DEEA.html> (referer: https://www.bturl.so/search/2160p_length_65.html)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/9CA52C4FDF63C55C97A34D32FA2EE034954EDCD3.html> (referer: https://www.bturl.so/search/2160p_length_65.html)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/423331CDD2D92A60D2C8687B7F2A8A3225D100ED.html> (referer: https://www.bturl.so/search/2160p_length_65.html)
+2018-11-27 17:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=hell%20or%20high%20water%20>
+{'baidu': 'hell or high water ',
+ 'click': '714',
+ 'ctime': '2018-03-11',
+ 'fanyi': '任何困难',
+ 'filename': 'Hell.or.High.Water.2016.2160p.BluRay.HEVC.DTS-HD.MA.5.1-WhiteRhino',
+ 'length': '74.6 GB',
+ 'link': 'magnet:?xt=urn:btih:E883830F15A5264A66ABFB9C7D4CE73317625412'}
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/6FF0A4E508C4C5FDE1252A837214975F89AC8996.html> (referer: https://www.bturl.so/search/2160p_length_65.html)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/7792BE3AD0E455D97F38552FF3836C07DD4F6993.html> (referer: https://www.bturl.so/search/2160p_length_65.html)
+2018-11-27 17:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=law%20abiding%20citizen%20>
+{'baidu': 'law abiding citizen ',
+ 'click': '105',
+ 'ctime': '2018-11-23',
+ 'fanyi': '遵纪守法的好公民',
+ 'filename': 'Law.Abiding.Citizen.2009.UHD.BLURAY.2160p.DV.IVA(RUS.UKR.ENG).ExKinoRay',
+ 'length': '74.5 GB',
+ 'link': 'magnet:?xt=urn:btih:D8FD0C1C1152A92887981A10402FE9DB95EA05BD'}
+2018-11-27 17:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=valerian%20and%20the%20city%20of%20a%20thousand%20planets%20>
+{'baidu': 'valerian and the city of a thousand planets ',
+ 'click': '1720',
+ 'ctime': '2018-02-01',
+ 'fanyi': '缬草和一千颗行星',
+ 'filename': 'Valerian.and.the.City.of.a.Thousand.Planets.2017.US.2160p.BluRay.REMUX.HEVC.HDR.D.V.TrueHD.7.1.Atmos.IVA(6xRUS.UKR.ENG).mkv',
+ 'length': '73.6 GB',
+ 'link': 'magnet:?xt=urn:btih:70158558F203FCD09BA104B6ABF19E661B6FA807'}
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=iron%20fist> (referer: None)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=spider-man%20> (referer: None)
+2018-11-27 17:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=iron%20fist>
+{'baidu': 'iron fist',
+ 'click': '291',
+ 'ctime': '2018-09-29',
+ 'fanyi': '铁拳',
+ 'filename': 'Iron.Fist.S02.2018.WEBRip.2160p.HDR.MediaClub',
+ 'length': '73.7 GB',
+ 'link': 'magnet:?xt=urn:btih:431E1FE7FC64B53E114051C6F7774B1E57BE5344'}
+2018-11-27 17:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=spider-man%20>
+{'baidu': 'spider-man ',
+ 'click': '820',
+ 'ctime': '2017-12-29',
+ 'fanyi': '蜘蛛侠',
+ 'filename': 'Spider-Man.3.2007.2160p.BluRay.HEVC.TrueHD.7.1.Atmos-SUPERSIZE',
+ 'length': '75.2 GB',
+ 'link': 'magnet:?xt=urn:btih:63EB2A97FCE54F36D7EEE27A4C431FC00FE86B6B'}
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/B72831887FE79A9C7C9D093665B3DF086B04DE78.html> (referer: https://www.bturl.so/search/2160p_length_65.html)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=men%20in%20black%20> (referer: None)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20fifth%20element%20> (referer: None)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/ECA849716728C1C0DDDB47009846162E11B6EB26.html> (referer: https://www.bturl.so/search/2160p_length_65.html)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=%D1%85%D0%B8%D0%B6%D0%B8%D0%BD%D0%B0%20%D0%B2%20%D0%BB%D0%B5%D1%81%D1%83%20> (referer: None)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/18F35A938FF9711F9B5B3C65854FD9B48C045219.html> (referer: https://www.bturl.so/search/2160p_length_65.html)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/D8E6CC1214815945926FF35DBF60F1748B9D81B0.html> (referer: https://www.bturl.so/search/2160p_length_65.html)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/5706F199FE88F6958C67E40AC46CA129ABE1951D.html> (referer: https://www.bturl.so/search/2160p_length_65.html)
+2018-11-27 17:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=men%20in%20black%20>
+{'baidu': 'men in black ',
+ 'click': '435',
+ 'ctime': '2018-07-20',
+ 'fanyi': '黑衣人',
+ 'filename': 'Men in Black 3 [Люди в чёрном 3] WEB-DL 2160p.mkv',
+ 'length': '73.5 GB',
+ 'link': 'magnet:?xt=urn:btih:423331CDD2D92A60D2C8687B7F2A8A3225D100ED'}
+2018-11-27 17:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20fifth%20element%20>
+{'baidu': 'the fifth element ',
+ 'click': '1027',
+ 'ctime': '2017-11-02',
+ 'fanyi': '第五元素',
+ 'filename': 'The.Fifth.Element.1997.2160p.BluRay.x265.10bit.SDR.DTS-HD.MA.TrueHD.7.1.Atmos-SWTYBLZ',
+ 'length': '73.5 GB',
+ 'link': 'magnet:?xt=urn:btih:9CA52C4FDF63C55C97A34D32FA2EE034954EDCD3'}
+2018-11-27 17:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=%D1%85%D0%B8%D0%B6%D0%B8%D0%BD%D0%B0%20%D0%B2%20%D0%BB%D0%B5%D1%81%D1%83%20>
+{'baidu': 'хижина в лесу ',
+ 'click': '747',
+ 'ctime': '2018-07-01',
+ 'fanyi': '森林中的小屋',
+ 'filename': 'Хижина в лесу.2012.UHD.Blu-Ray.Remux.2160p.mkv',
+ 'length': '73.5 GB',
+ 'link': 'magnet:?xt=urn:btih:FF8BB3B36247834D25F193DC8CD8D7623D72DEEA'}
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/537012E5CE1D5B0135361E43F3B0CC82A6C83C1C.html> (referer: https://www.bturl.so/search/2160p_length_65.html)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/0C9AD30F9825691C8AB62169B2AE67FE48E1A47A.html> (referer: https://www.bturl.so/search/2160p_length_65.html)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=most%20cherez%20reku%20kvay%20> (referer: None)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=tom%20clancys%20jack%20ryan> (referer: None)
+2018-11-27 17:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=%D0%BF%D0%BE%20%D1%81%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D0%BC%20%D1%81%D0%BE%D0%B2%D0%B5%D1%81%D1%82%D0%B8%20> (referer: None)
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=master%20of%20none> (referer: None)
+2018-11-27 17:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=most%20cherez%20reku%20kvay%20>
+{'baidu': 'most cherez reku kvay ',
+ 'click': '258',
+ 'ctime': '2018-02-24',
+ 'fanyi': '大多数cherez reku kvay',
+ 'filename': 'Most.cherez.reku.Kvay.1957.2160p.HEVC.UHD.HDR.MediaClub.mkv',
+ 'length': '73.6 GB',
+ 'link': 'magnet:?xt=urn:btih:ECA849716728C1C0DDDB47009846162E11B6EB26'}
+2018-11-27 17:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=tom%20clancys%20jack%20ryan>
+{'baidu': 'tom clancys jack ryan',
+ 'click': '103',
+ 'ctime': '2018-09-29',
+ 'fanyi': '汤姆克兰西杰克瑞安',
+ 'filename': 'Tom.Clancys.Jack.Ryan.S01.2160p.HDR.WEBRip.2xRus.Eng.EniaHD',
+ 'length': '73.6 GB',
+ 'link': 'magnet:?xt=urn:btih:5706F199FE88F6958C67E40AC46CA129ABE1951D'}
+2018-11-27 17:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=%D0%BF%D0%BE%20%D1%81%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D0%BC%20%D1%81%D0%BE%D0%B2%D0%B5%D1%81%D1%82%D0%B8%20>
+{'baidu': 'по соображениям совести ',
+ 'click': '435',
+ 'ctime': '2018-08-02',
+ 'fanyi': '出于良心',
+ 'filename': 'По соображениям совести.2016.UHD.Blu-Ray.Remux.2160p.mkv',
+ 'length': '73.6 GB',
+ 'link': 'magnet:?xt=urn:btih:D8E6CC1214815945926FF35DBF60F1748B9D81B0'}
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/E98B7791BA63070B58EFB26640E00E1BDD6F449D.html> (referer: https://www.bturl.so/search/2160p_length_65.html)
+2018-11-27 17:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=master%20of%20none>
+{'baidu': 'master of none',
+ 'click': '53',
+ 'ctime': '2016-02-05',
+ 'fanyi': '不精',
+ 'filename': 'Master.of.None.S01.2160p.Netflix.WEBRip.Rus.Eng.TrollUHD-ULTRAHDCLUB',
+ 'length': '73.5 GB',
+ 'link': 'magnet:?xt=urn:btih:18F35A938FF9711F9B5B3C65854FD9B48C045219'}
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/F4F1DE76BBC1DE3A3AA602FEC3607BF80F223977.html> (referer: https://www.bturl.so/search/2160p_length_65.html)
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/D59845753F882F5BD8C97B62C9C0D7384855AE8A.html> (referer: https://www.bturl.so/search/2160p_length_65.html)
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/D8560CD0E16C38C551571710E488E90E4E3B0C39.html> (referer: https://www.bturl.so/search/2160p_length_60.html)
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/CABD8E652446CDE1EF942490E46A28EDE86CA3E5.html> (referer: https://www.bturl.so/search/2160p_length_60.html)
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=godzilla%20> (referer: None)
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/E5F3BCB5405582153DB4F79E6E6FB0A24FCD2C03.html> (referer: https://www.bturl.so/search/2160p_length_60.html)
+2018-11-27 17:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=godzilla%20>
+{'baidu': 'godzilla ',
+ 'click': '1185',
+ 'ctime': '2015-12-13',
+ 'fanyi': '哥斯拉',
+ 'filename': 'Godzilla.1998.2160p.WEB-DL.5xRus.Ukr.Eng.TrollUHD-ULTRAHDCLUB.mkv',
+ 'length': '74.2 GB',
+ 'link': 'magnet:?xt=urn:btih:22C60D92199E0ED14CB8549A6086D5F901C6B542'}
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/1EC9659D268A58E14DAFB36665123A78935CB89B.html> (referer: https://www.bturl.so/search/2160p_length_60.html)
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=hook%20> (referer: None)
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=fi%20> (referer: None)
+2018-11-27 17:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=hook%20>
+{'baidu': 'hook ',
+ 'click': '276',
+ 'ctime': '2018-10-07',
+ 'fanyi': '钩',
+ 'filename': 'Hook.1991.2160p.BluRay.REMUX.HEVC.DTS-HD.MA.TrueHD.7.1.Atmos-FGT',
+ 'length': '75.7 GB',
+ 'link': 'magnet:?xt=urn:btih:CABD8E652446CDE1EF942490E46A28EDE86CA3E5'}
+2018-11-27 17:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=fi%20>
+{'baidu': 'fi ',
+ 'click': '34',
+ 'ctime': '2017-06-23',
+ 'fanyi': 'fi',
+ 'filename': 'Fi 01.Sezon (01-12) Boxset 4K UltraHD 2160p WebDL TDRG',
+ 'length': '75.6 GB',
+ 'link': 'magnet:?xt=urn:btih:D8560CD0E16C38C551571710E488E90E4E3B0C39'}
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/9697D424D17BD65BF2395C2C0373BC65C3EDC41E.html> (referer: https://www.bturl.so/search/2160p_length_60.html)
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=%E5%93%88%E5%88%A9%C2%B7%E6%B3%A2%E7%89%B9%E4%B8%8E%E9%AD%94%E6%B3%95%E7%9F%B3%20harry%20potter%20and%20the%20sorcerer%27s%20stone%20> (referer: None)
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/C3EEE205C4CB2A8FFA40A6D8E5E939FF2FEDD8FF.html> (referer: https://www.bturl.so/search/2160p_length_60.html)
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=john%20wick%20chapter%20> (referer: None)
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/7EFCE3D74C31C22851504A8319D205C128F71BC0.html> (referer: https://www.bturl.so/search/2160p_length_60.html)
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/BF2B67332083B507B3C62351CA7C42476BBD4CC4.html> (referer: https://www.bturl.so/search/2160p_length_60.html)
+2018-11-27 17:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=%E5%93%88%E5%88%A9%C2%B7%E6%B3%A2%E7%89%B9%E4%B8%8E%E9%AD%94%E6%B3%95%E7%9F%B3%20harry%20potter%20and%20the%20sorcerer%27s%20stone%20>
+{'baidu': "哈利·波特与魔法石 harry potter and the sorcerer's stone ",
+ 'click': '461',
+ 'ctime': '2018-04-29',
+ 'fanyi': 'Harry potter and the',
+ 'filename': "哈利·波特与魔法石.Harry.Potter.and.the.Sorcerer's.Stone.2001.2160p.UHD.Blu-ray.HEVC.DTS-HD.MA.7.1-TERMiNAL",
+ 'length': '75.8 GB',
+ 'link': 'magnet:?xt=urn:btih:1EC9659D268A58E14DAFB36665123A78935CB89B'}
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=life_of_pi_> (referer: None)
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/DAE449147BB9B13B01834F927FFD911D4697DA58.html> (referer: https://www.bturl.so/search/2160p_length_60.html)
+2018-11-27 17:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=john%20wick%20chapter%20>
+{'baidu': 'john wick chapter ',
+ 'click': '2',
+ 'ctime': '2017-11-05',
+ 'fanyi': '约翰灯芯章',
+ 'filename': 'John.Wick.Chapter.2.2017.2160p.UltraHD.Bluray.HDR.Atmos.7.1.x265.mkv',
+ 'length': '75.7 GB',
+ 'link': 'magnet:?xt=urn:btih:E5F3BCB5405582153DB4F79E6E6FB0A24FCD2C03'}
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/D57A5BA950C63EB50A9FC4272892E533C4D0DB1C.html> (referer: https://www.bturl.so/search/2160p_length_60.html)
+2018-11-27 17:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=life_of_pi_>
+{'baidu': 'life_of_pi_',
+ 'click': '21',
+ 'ctime': '2016-07-03',
+ 'fanyi': 'life_of_pi_',
+ 'filename': 'LIFE_OF_PI_2160p.mkv',
+ 'length': '75.8 GB',
+ 'link': 'magnet:?xt=urn:btih:9697D424D17BD65BF2395C2C0373BC65C3EDC41E'}
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=blade%20runner%20> (referer: None)
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=independence%20day%20> (referer: None)
+2018-11-27 17:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=mindhunter> (referer: None)
+2018-11-27 17:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=blade%20runner%20>
+{'baidu': 'blade runner ',
+ 'click': '1614',
+ 'ctime': '2018-02-14',
+ 'fanyi': '银翼杀手',
+ 'filename': 'Blade.Runner.2049.2017.2160p.BluRay.HEVC.TrueHD.7.1.Atmos-TERMiNAL',
+ 'length': '75.7 GB',
+ 'link': 'magnet:?xt=urn:btih:BF2B67332083B507B3C62351CA7C42476BBD4CC4'}
+2018-11-27 17:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=independence%20day%20>
+{'baidu': 'independence day ',
+ 'click': '1193',
+ 'ctime': '2017-10-31',
+ 'fanyi': '独立日',
+ 'filename': 'Independence.Day.1996.EXTENDED.2160p.BluRay.x264.8bit.SDR.DTS-X.7.1-SWTYBLZ',
+ 'length': '76.0 GB',
+ 'link': 'magnet:?xt=urn:btih:7EFCE3D74C31C22851504A8319D205C128F71BC0'}
+2018-11-27 17:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=mindhunter>
+{'baidu': 'mindhunter',
+ 'click': '1',
+ 'ctime': '2018-11-24',
+ 'fanyi': 'mindhunter',
+ 'filename': 'Mindhunter.S01.2160p.TVShows',
+ 'length': '76.0 GB',
+ 'link': 'magnet:?xt=urn:btih:DAE449147BB9B13B01834F927FFD911D4697DA58'}
+2018-11-27 17:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/7D092F30224DC28ABB382FA2FAF39BFC06E39B9D.html> (referer: https://www.bturl.so/search/2160p_length_60.html)
+2018-11-27 17:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/85E4F6923F1A66A5455030415A28E86317A04A06.html> (referer: https://www.bturl.so/search/2160p_length_60.html)
+2018-11-27 17:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=harry%20potter%20and%20the%20sorcerers%20stone%20> (referer: None)
+2018-11-27 17:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/D43CE29D2621D84365868E4067E9BAD54605C4CD.html> (referer: https://www.bturl.so/search/2160p_length_64.html)
+2018-11-27 17:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/9E079E11CB434A8CAF2BED0E30DD0193946CEE1A.html> (referer: https://www.bturl.so/search/2160p_length_60.html)
+2018-11-27 17:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/C8409B1FFF8F61063E0D24D30698D9AF22750BFA.html> (referer: https://www.bturl.so/search/2160p_length_64.html)
+2018-11-27 17:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=%D0%B4%D0%B6%D0%B5%D0%B9%D1%81%D0%BE%D0%BD%20%D0%B1%D0%BE%D1%80%D0%BD%20> (referer: None)
+2018-11-27 17:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=harry%20potter%20and%20the%20sorcerers%20stone%20>
+{'baidu': 'harry potter and the sorcerers stone ',
+ 'click': '2498',
+ 'ctime': '2018-01-30',
+ 'fanyi': '《哈利波特与魔法石',
+ 'filename': 'Harry.Potter.and.the.Sorcerers.Stone.2001.2160p.BluRay.REMUX.HEVC.DTS-X.7.1.IVA(RUS.UKR.ENG).mkv',
+ 'length': '75.7 GB',
+ 'link': 'magnet:?xt=urn:btih:7D092F30224DC28ABB382FA2FAF39BFC06E39B9D'}
+2018-11-27 17:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=%D0%B4%D0%B6%D0%B5%D0%B9%D1%81%D0%BE%D0%BD%20%D0%B1%D0%BE%D1%80%D0%BD%20>
+{'baidu': 'джейсон борн ',
+ 'click': '648',
+ 'ctime': '2018-07-09',
+ 'fanyi': '杰森伯恩',
+ 'filename': 'Джейсон Борн.2016.UHD.BluRay.Remux.2160p.mkv',
+ 'length': '75.8 GB',
+ 'link': 'magnet:?xt=urn:btih:85E4F6923F1A66A5455030415A28E86317A04A06'}
+2018-11-27 17:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/7E9C0A5F78CBB580A477E834917A488FEF16D782.html> (referer: https://www.bturl.so/search/2160p_length_64.html)
+2018-11-27 17:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/BF1E913EB8B658C61B783188669BE0B88B414FA5.html> (referer: https://www.bturl.so/search/2160p_length_64.html)
+2018-11-27 17:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=el%20hombre%20de%20acero%20%5Bfull%20uhd%5D%5B> (referer: None)
+2018-11-27 17:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=man%20of%20steel%20> (referer: None)
+2018-11-27 17:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/359A94F925FE32632F968BD6D5E301C4F2030D2A.html> (referer: https://www.bturl.so/search/2160p_length_64.html)
+2018-11-27 17:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20spy%20who%20dumped%20me%20> (referer: None)
+2018-11-27 17:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=godzilla%20%5B> (referer: None)
+2018-11-27 17:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/A82CF3BDF3204B92055D32B69B9CA3C11BCB228C.html> (referer: https://www.bturl.so/search/2160p_length_64.html)
+2018-11-27 17:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=el%20hombre%20de%20acero%20%5Bfull%20uhd%5D%5B>
+{'baidu': 'el hombre de acero [full uhd][',
+ 'click': '597',
+ 'ctime': '2017-11-13',
+ 'fanyi': '钢铁侠uhd][[全',
+ 'filename': 'El Hombre de Acero [FULL UHD][4K 2160p][HEVC][AC3 5.1 Castellano '
+             'True HD 5.1-Ingles+Subs][ES-EN]',
+ 'length': '73.8 GB',
+ 'link': 'magnet:?xt=urn:btih:C8409B1FFF8F61063E0D24D30698D9AF22750BFA'}
+2018-11-27 17:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=man%20of%20steel%20>
+{'baidu': 'man of steel ',
+ 'click': '1701',
+ 'ctime': '2017-11-16',
+ 'fanyi': '钢的人',
+ 'filename': 'Man.of.Steel.2013.2160p.BluRay.HEVC.TrueHD.7.1.Atmos-SharpHD',
+ 'length': '73.8 GB',
+ 'link': 'magnet:?xt=urn:btih:D43CE29D2621D84365868E4067E9BAD54605C4CD'}
+2018-11-27 17:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20spy%20who%20dumped%20me%20>
+{'baidu': 'the spy who dumped me ',
+ 'click': '434',
+ 'ctime': '2018-10-28',
+ 'fanyi': '间谍谁甩了我',
+ 'filename': 'The.Spy.Who.Dumped.Me.2018.2160p.BluRay.HEVC.TrueHD.7.1.Atmos-TERMiNAL',
+ 'length': '76.1 GB',
+ 'link': 'magnet:?xt=urn:btih:9E079E11CB434A8CAF2BED0E30DD0193946CEE1A'}
+2018-11-27 17:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/A5BE842E7A89F61742BEEC163F6D41632487FF18.html> (referer: https://www.bturl.so/search/2160p_length_64.html)
+2018-11-27 17:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=godzilla%20%5B>
+{'baidu': 'godzilla [',
+ 'click': '3377',
+ 'ctime': '2016-10-12',
+ 'fanyi': '哥斯拉(',
+ 'filename': 'Godzilla [4K UHD 2160p HEVC X264][DTS MA 5.1 Castellano DTS MA '
+             '5.1-Ingles+Subs][ES-EN]',
+ 'length': '73.8 GB',
+ 'link': 'magnet:?xt=urn:btih:7E9C0A5F78CBB580A477E834917A488FEF16D782'}
+2018-11-27 17:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/38549CFA338CFA017D56456097F90450C07E80E7.html> (referer: https://www.bturl.so/search/2160p_length_64.html)
+2018-11-27 17:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=%E8%B6%85%E4%BA%BA%EF%BC%9A%E9%92%A2%E9%93%81%E4%B9%8B%E8%BA%AF%20man%20of%20steel%20> (referer: None)
+2018-11-27 17:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=transformers%20-%20the%20last%20knight%20%28> (referer: None)
+2018-11-27 17:27:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=%E8%B6%85%E4%BA%BA%EF%BC%9A%E9%92%A2%E9%93%81%E4%B9%8B%E8%BA%AF%20man%20of%20steel%20>
+{'baidu': '超人：钢铁之躯 man of steel ',
+ 'click': '123',
+ 'ctime': '2018-05-02',
+ 'fanyi': 'Superman: steel man ',
+ 'filename': '超人：钢铁之躯.Man.of.Steel.2013.2160p.BluRay.HEVC.TrueHD.7.1.Atmos-SharpHD',
+ 'length': '73.8 GB',
+ 'link': 'magnet:?xt=urn:btih:359A94F925FE32632F968BD6D5E301C4F2030D2A'}
+2018-11-27 17:27:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=transformers%20-%20the%20last%20knight%20%28>
+{'baidu': 'transformers - the last knight (',
+ 'click': '907',
+ 'ctime': '2018-06-25',
+ 'fanyi': '变形金刚-最后的骑士(',
+ 'filename': 'Transformers - The Last Knight (2017) [2160p].mkv',
+ 'length': '73.9 GB',
+ 'link': 'magnet:?xt=urn:btih:A82CF3BDF3204B92055D32B69B9CA3C11BCB228C'}
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/BE97BF7F671B36105ED4E39A9A3034B8066E5D3A.html> (referer: https://www.bturl.so/search/2160p_length_64.html)
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/220F28CD2E1582EFECBC6894F8FFAC46BAB68E50.html> (referer: https://www.bturl.so/search/2160p_length_64.html)
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20hunger%20games%20catching%20fire%20> (referer: None)
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=batman%20begins%20> (referer: None)
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/780984C5002E07C95B54FE97E481126EAEA7CFA7.html> (referer: https://www.bturl.so/search/2160p_length_61.html)
+2018-11-27 17:27:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20hunger%20games%20catching%20fire%20>
+{'baidu': 'the hunger games catching fire ',
+ 'click': '1243',
+ 'ctime': '2018-02-27',
+ 'fanyi': '饥饿游戏着火',
+ 'filename': 'The.Hunger.Games.Catching.Fire.2013.PROPER.2160p.BluRay.REMUX.HEVC.DTS-HD.MA.TrueHD.7.1.Atmos-FGT',
+ 'length': '74.0 GB',
+ 'link': 'magnet:?xt=urn:btih:38549CFA338CFA017D56456097F90450C07E80E7'}
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/634B87A96B2D933C5AFD18785FFB5F6BF8E8B00B.html> (referer: https://www.bturl.so/search/2160p_length_64.html)
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20bridge%20on%20the%20river%20kwai%20> (referer: None)
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/65B04DB450ECE5270FCFCDDD2883A24E2EEF888C.html> (referer: https://www.bturl.so/search/2160p_length_64.html)
+2018-11-27 17:27:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=batman%20begins%20>
+{'baidu': 'batman begins ',
+ 'click': '158',
+ 'ctime': '2018-07-28',
+ 'fanyi': '蝙蝠侠开始',
+ 'filename': 'Batman Begins 2005 2160p EUR UHD Blu-ray HEVC DTS-HD MA '
+             '5.1-OLDHAM',
+ 'length': '73.8 GB',
+ 'link': 'magnet:?xt=urn:btih:A5BE842E7A89F61742BEEC163F6D41632487FF18'}
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=bad%20boys%20> (referer: None)
+2018-11-27 17:27:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20bridge%20on%20the%20river%20kwai%20>
+{'baidu': 'the bridge on the river kwai ',
+ 'click': '469',
+ 'ctime': '2017-12-08',
+ 'fanyi': '桂河大桥',
+ 'filename': 'The.Bridge.on.the.River.Kwai.1957.2160p.BluRay.REMUX.HEVC.TrueHD.7.1.Atmos.mkv',
+ 'length': '74.0 GB',
+ 'link': 'magnet:?xt=urn:btih:BE97BF7F671B36105ED4E39A9A3034B8066E5D3A'}
+2018-11-27 17:27:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=bad%20boys%20>
+{'baidu': 'bad boys ',
+ 'click': '1116',
+ 'ctime': '2018-09-04',
+ 'fanyi': '坏男孩',
+ 'filename': 'Bad.Boys.1995.2160p.BluRay.REMUX.HEVC.DTS-HD.MA.TrueHD.7.1.Atmos-TERMiNAL',
+ 'length': '73.8 GB',
+ 'link': 'magnet:?xt=urn:btih:220F28CD2E1582EFECBC6894F8FFAC46BAB68E50'}
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/39ACE0AFC0E6736E563BD276D5C12A8222F838C7.html> (referer: https://www.bturl.so/search/2160p_length_60.html)
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=cyw%20%E8%89%B3%E9%AA%A8%20colourful%20bone%20ep> (referer: None)
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/E63B21F095F49CD392E50390A566A4D732034EFF.html> (referer: https://www.bturl.so/search/2160p_length_60.html)
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=la%20la%20land%20> (referer: None)
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=%5Bu> (referer: None)
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/41BD680277923840DC58924231F85EB9798B5390.html> (referer: https://www.bturl.so/search/2160p_length_61.html)
+2018-11-27 17:27:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=cyw%20%E8%89%B3%E9%AA%A8%20colourful%20bone%20ep>
+{'baidu': 'cyw 艳骨 colourful bone ep',
+ 'click': '8',
+ 'ctime': '2018-07-25',
+ 'fanyi': 'Cyw colourful colour',
+ 'filename': 'CYW.艳骨.Colourful '
+             'Bone.EP01-54.2017.3840x2160p.WEB-DL.x265.Audio.AAC-无水印.菜牙电影网@浅笑',
+ 'length': '74.1 GB',
+ 'link': 'magnet:?xt=urn:btih:65B04DB450ECE5270FCFCDDD2883A24E2EEF888C'}
+2018-11-27 17:27:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=la%20la%20land%20>
+{'baidu': 'la la land ',
+ 'click': '2041',
+ 'ctime': '2017-06-22',
+ 'fanyi': '土地的',
+ 'filename': 'La.La.Land.2016.2160p.BluRay.REMUX.HEVC.DTS-HD.MA.TrueHD.7.1.Atmos-FGT',
+ 'length': '74.1 GB',
+ 'link': 'magnet:?xt=urn:btih:634B87A96B2D933C5AFD18785FFB5F6BF8E8B00B'}
+2018-11-27 17:27:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=%5Bu>
+{'baidu': '[u',
+ 'click': '427',
+ 'ctime': '2018-09-15',
+ 'fanyi': '[或',
+ 'filename': '[U3-Project] Mary to Majo no Hana [UHD-BD 4K 2160p '
+             'HEVC-yuv420p10 DTS-X DTS-HDMA PGS(jpn,eng)].mkv',
+ 'length': '75.2 GB',
+ 'link': 'magnet:?xt=urn:btih:780984C5002E07C95B54FE97E481126EAEA7CFA7'}
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/032CD4B93F836EC2FB060FFC404264152F689995.html> (referer: https://www.bturl.so/search/2160p_length_61.html)
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/4E1E7C845C7F8C1B814876084ADC6BFC6CF089EE.html> (referer: https://www.bturl.so/search/2160p_length_61.html)
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/BD6B8739E72B1ACC2480A88A0C512D3CB7C7559D.html> (referer: https://www.bturl.so/search/2160p_length_61.html)
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=step%20brothers%20> (referer: None)
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=mary%20and%20the%20witchs%20flower%20> (referer: None)
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/15D3F26334BC424414B85CAABCC1823496579B14.html> (referer: https://www.bturl.so/search/2160p_length_64.html)
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/12FEB10DD16A11117EB9C5EA9996CE1C6710EBB1.html> (referer: https://www.bturl.so/search/2160p_length_61.html)
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/4F74E61E48EABBA417C28F30297CA096096E46F8.html> (referer: https://www.bturl.so/search/2160p_length_61.html)
+2018-11-27 17:27:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=step%20brothers%20>
+{'baidu': 'step brothers ',
+ 'click': '4',
+ 'ctime': '2018-10-17',
+ 'fanyi': '一步的兄弟',
+ 'filename': 'Step.Brothers.2008.UHD.BluRay.2160p.HEVC.TrueHD.7.1-COASTER',
+ 'length': '76.1 GB',
+ 'link': 'magnet:?xt=urn:btih:E63B21F095F49CD392E50390A566A4D732034EFF'}
+2018-11-27 17:27:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=mary%20and%20the%20witchs%20flower%20>
+{'baidu': 'mary and the witchs flower ',
+ 'click': '1427',
+ 'ctime': '2018-05-24',
+ 'fanyi': '玛丽和女巫花',
+ 'filename': 'Mary.and.the.Witchs.Flower.2017.JAPANESE.2160p.BluRay.REMUX.HEVC.DTS-X.7.1-FGT',
+ 'length': '75.2 GB',
+ 'link': 'magnet:?xt=urn:btih:41BD680277923840DC58924231F85EB9798B5390'}
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20great%20gatsby%20> (referer: None)
+2018-11-27 17:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/757989BF560EAB8913D7A738DAD5B6A1697A3D7D.html> (referer: https://www.bturl.so/search/2160p_length_61.html)
+2018-11-27 17:27:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20great%20gatsby%20>
+{'baidu': 'the great gatsby ',
+ 'click': '979',
+ 'ctime': '2018-04-14',
+ 'fanyi': '了不起的盖茨比',
+ 'filename': 'The.Great.Gatsby.2013.2160p.BluRay.REMUX.HEVC.DTS-HD.MA.5.1-FGT',
+ 'length': '75.3 GB',
+ 'link': 'magnet:?xt=urn:btih:4E1E7C845C7F8C1B814876084ADC6BFC6CF089EE'}
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/18A6D848C6786382C07E10A5B0EE80235E9A93AB.html> (referer: https://www.bturl.so/search/2160p_length_61.html)
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=detroit%20> (referer: None)
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/93889160517389E976FAF04CD4F9FE47E4E09728.html> (referer: https://www.bturl.so/search/2160p_length_62.html)
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/BEF5E5A4CFC1E6BF1A429EBD890F95E2F3B51CAD.html> (referer: https://www.bturl.so/search/2160p_length_61.html)
+2018-11-27 17:27:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=detroit%20>
+{'baidu': 'detroit ',
+ 'click': '1035',
+ 'ctime': '2018-05-26',
+ 'fanyi': '底特律',
+ 'filename': 'Detroit.2017.UHD.BluRay.2160p.DTS-HD.MA.5.1.HEVC.HYBRID.REMUX-FraMeSToR',
+ 'length': '74.1 GB',
+ 'link': 'magnet:?xt=urn:btih:15D3F26334BC424414B85CAABCC1823496579B14'}
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/045502C02734467F1D039923BDD7F1183CD1B894.html> (referer: https://www.bturl.so/search/2160p_length_61.html)
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/AD9314C77073041C927A89D7619CE973A94378B4.html> (referer: https://www.bturl.so/search/2160p_length_62.html)
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/69CF1F618693FC1278084783009130978F77D867.html> (referer: https://www.bturl.so/search/2160p_length_62.html)
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20patriot%20> (referer: None)
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=> (referer: None)
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=better%20call%20saul> (referer: None)
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/88DB1F0B4DE9D1B6FDA904F6ACCB661DD7427AB8.html> (referer: https://www.bturl.so/search/2160p_length_62.html)
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=american%20psycho%20> (referer: None)
+2018-11-27 17:27:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20patriot%20>
+{'baidu': 'the patriot ',
+ 'click': '1381',
+ 'ctime': '2018-06-26',
+ 'fanyi': '爱国者',
+ 'filename': 'The.Patriot.2000.THEATRICAL.2160p.BluRay.REMUX.HEVC.DTS-HD.MA.TrueHD.7.1.Atmos-FGT',
+ 'length': '75.6 GB',
+ 'link': 'magnet:?xt=urn:btih:18A6D848C6786382C07E10A5B0EE80235E9A93AB'}
+2018-11-27 17:27:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=better%20call%20saul>
+{'baidu': 'better call saul',
+ 'click': '2273',
+ 'ctime': '2016-05-06',
+ 'fanyi': '好叫扫罗',
+ 'filename': 'Better.Call.Saul.S02.2160p.WEBRip.KvK.CasStudio.TV',
+ 'length': '75.6 GB',
+ 'link': 'magnet:?xt=urn:btih:BEF5E5A4CFC1E6BF1A429EBD890F95E2F3B51CAD'}
+2018-11-27 17:27:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=american%20psycho%20>
+{'baidu': 'american psycho ',
+ 'click': '381',
+ 'ctime': '2018-09-27',
+ 'fanyi': '美国杀人魔',
+ 'filename': 'American.Psycho.2000.UNCUT.2160p.BluRay.HEVC.TrueHD.7.1.Atmos-WhiteRhino',
+ 'length': '75.5 GB',
+ 'link': 'magnet:?xt=urn:btih:045502C02734467F1D039923BDD7F1183CD1B894'}
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/EB43622830BBFDE81D3DED7EDCB665C0035DC715.html> (referer: https://www.bturl.so/search/2160p_length_62.html)
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/B736082C14171D14B339115494B79E31661DDF1F.html> (referer: https://www.bturl.so/search/2160p_length_62.html)
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/BC316FAE6F711F059E37B6D1B50E81D19F4BF844.html> (referer: https://www.bturl.so/search/2160p_length_61.html)
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=zero%20dark%20thirty%20> (referer: None)
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/BEAC334C1E036D499A3D5447D04AF7D8FCB3D29C.html> (referer: https://www.bturl.so/search/2160p_length_62.html)
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20equalizer%20> (referer: None)
+2018-11-27 17:27:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=zero%20dark%20thirty%20>
+{'baidu': 'zero dark thirty ',
+ 'click': '6',
+ 'ctime': '2018-03-02',
+ 'fanyi': '零黑暗三十',
+ 'filename': 'Zero.Dark.Thirty.2012.UHD.BluRay.2160p.REMUX.TrueHD.7.1.ATMOS.HEVC.HuN-TRiNiTY',
+ 'length': '74.7 GB',
+ 'link': 'magnet:?xt=urn:btih:EB43622830BBFDE81D3DED7EDCB665C0035DC715'}
+2018-11-27 17:27:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20equalizer%20>
+{'baidu': 'the equalizer ',
+ 'click': '631',
+ 'ctime': '2018-08-05',
+ 'fanyi': '均衡器',
+ 'filename': 'The.Equalizer.2014.2160p.BluRay.REMUX.HEVC.DTS-HD.MA.TrueHD.7.1',
+ 'length': '74.8 GB',
+ 'link': 'magnet:?xt=urn:btih:B736082C14171D14B339115494B79E31661DDF1F'}
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/7D718BBB75F9D2368658878882411E520D42E485.html> (referer: https://www.bturl.so/search/2160p_length_62.html)
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/A1A4848CF46322043DF4E54FE4757A927512C9A3.html> (referer: https://www.bturl.so/search/2160p_length_62.html)
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/31FC1274C3E507C7FEA7BCA09724ED30649A338D.html> (referer: https://www.bturl.so/search/2160p_length_62.html)
+2018-11-27 17:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/CF3F34B9D903CF3F3AB64CDB72E5B6175520F139.html> (referer: https://www.bturl.so/search/2160p_length_62.html)
+2018-11-27 17:27:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/3CF93A665486E2BB8EF0CE6DB8EAF670354F3BEC.html> (referer: https://www.bturl.so/search/2160p_length_62.html)
+2018-11-27 17:27:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/EDDBEB611048EBCC4836A56220328E741E18CCC1.html> (referer: https://www.bturl.so/search/2160p_length_63.html)
+2018-11-27 17:27:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=goodfellas%20> (referer: None)
+2018-11-27 17:27:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=ghost%20in%20the%20shell%20> (referer: None)
+2018-11-27 17:27:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=goodfellas%20>
+{'baidu': 'goodfellas ',
+ 'click': '1076',
+ 'ctime': '2017-11-24',
+ 'fanyi': '好家伙',
+ 'filename': 'Goodfellas.1990.2160p.BluRay.x265.10bit.SDR.DTS-HD.MA.5.1-SWTYBLZ',
+ 'length': '74.8 GB',
+ 'link': 'magnet:?xt=urn:btih:A1A4848CF46322043DF4E54FE4757A927512C9A3'}
+2018-11-27 17:27:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=t> (referer: None)
+2018-11-27 17:27:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=ghost%20in%20the%20shell%20>
+{'baidu': 'ghost in the shell ',
+ 'click': '1282',
+ 'ctime': '2018-07-06',
+ 'fanyi': '攻壳机动队',
+ 'filename': 'Ghost.in.the.Shell.2.Innocence.2004.2160p.BluRay.HEVC.DTS-X.7.1-TASTED',
+ 'length': '74.7 GB',
+ 'link': 'magnet:?xt=urn:btih:CF3F34B9D903CF3F3AB64CDB72E5B6175520F139'}
+2018-11-27 17:27:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=t>
+{'baidu': 't',
+ 'click': '767',
+ 'ctime': '2017-10-31',
+ 'fanyi': 't',
+ 'filename': 'T2.Trainspotting.2017.2160p.BluRay.x264.8bit.SDR.DTS-HD.MA.TrueHD.7.1.Atmos-SWTYBLZ',
+ 'length': '74.2 GB',
+ 'link': 'magnet:?xt=urn:btih:EDDBEB611048EBCC4836A56220328E741E18CCC1'}
+2018-11-27 17:27:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/AF3F99A8CCF1247F02D6DE9340B6C8B7686DA4E0.html> (referer: https://www.bturl.so/search/2160p_length_63.html)
+2018-11-27 17:27:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/EFE68D783891AD8BAEEC7826458BB7B25541CA02.html> (referer: https://www.bturl.so/search/2160p_length_63.html)
+2018-11-27 17:27:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/66ABBF3A72BFF073F58008F1CFBC78EEDF6ECA7A.html> (referer: https://www.bturl.so/search/2160p_length_62.html)
+2018-11-27 17:27:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bturl.so/566B913944FA1D702AC6A990185D3C57CF23E6BF.html> (referer: https://www.bturl.so/search/2160p_length_62.html)
+2018-11-27 17:27:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=harry%20potter%20and%20the%20half-blood%20prince%20> (referer: None)
+2018-11-27 17:27:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=ready_player_one_bdremux%20> (referer: None)
+2018-11-27 17:27:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20prestige%20> (referer: None)
+2018-11-27 17:27:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=harry%20potter%20and%20the%20half-blood%20prince%20>
+{'baidu': 'harry potter and the half-blood prince ',
+ 'click': '1336',
+ 'ctime': '2018-04-07',
+ 'fanyi': '《哈利波特与混血王子》',
+ 'filename': 'Harry.Potter.and.the.Half-Blood.Prince.2009.2160p.BluRay.HEVC.DTS-X.7.1-SUPERSIZE',
+ 'length': '74.6 GB',
+ 'link': 'magnet:?xt=urn:btih:AF3F99A8CCF1247F02D6DE9340B6C8B7686DA4E0'}
+2018-11-27 17:27:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=ready_player_one_bdremux%20>
+{'baidu': 'ready_player_one_bdremux ',
+ 'click': '576',
+ 'ctime': '2018-08-11',
+ 'fanyi': 'ready_player_one_bdr',
+ 'filename': 'Ready_Player_One_BDREMUX.2160p.4K.UltraHD.HEVC.HDR.mkv',
+ 'length': '74.6 GB',
+ 'link': 'magnet:?xt=urn:btih:EFE68D783891AD8BAEEC7826458BB7B25541CA02'}
+2018-11-27 17:27:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://fanyi.youdao.com/openapi.do?keyfrom=wufeifei&key=716426270&type=data&doctype=json&version=1.1&q=the%20prestige%20>
+{'baidu': 'the prestige ',
+ 'click': '1348',
+ 'ctime': '2018-01-29',
+ 'fanyi': '信誉',
+ 'filename': 'The.Prestige.2006.2160p.BluRay.HEVC.HDR.DTS-HD.MA.5.1.IVA(8xRUS.2xUKR.2xENG).mkv',
+ 'length': '74.8 GB',
+ 'link': 'magnet:?xt=urn:btih:66ABBF3A72BFF073F58008F1CFBC78EEDF6ECA7A'}
+2018-11-27 17:27:38 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-11-27 17:27:38 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 58109,
+ 'downloader/request_count': 158,
+ 'downloader/request_method_count/GET': 158,
+ 'downloader/response_bytes': 283528,
+ 'downloader/response_count': 158,
+ 'downloader/response_status_count/200': 158,
+ 'dupefilter/filtered': 28,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 11, 27, 9, 27, 38, 605667),
+ 'item_scraped_count': 61,
+ 'log_count/DEBUG': 221,
+ 'log_count/INFO': 7,
+ 'request_depth_max': 2,
+ 'response_received_count': 158,
+ 'scheduler/dequeued': 158,
+ 'scheduler/dequeued/memory': 158,
+ 'scheduler/enqueued': 158,
+ 'scheduler/enqueued/memory': 158,
+ 'start_time': datetime.datetime(2018, 11, 27, 9, 27, 30, 156192)}
+2018-11-27 17:27:38 [scrapy.core.engine] INFO: Spider closed (finished)

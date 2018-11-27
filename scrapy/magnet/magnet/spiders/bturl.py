@@ -14,6 +14,7 @@ import json
 
 class BturlSpider(scrapy.Spider):
     name = 'bturl'
+    base_url = 'https://www.bturl.so'  # bt磁力链
     # allowed_domains = ['bturl.cc']
     # start_urls = ['https://www.bturl.cc/']
     # start_urls = [
@@ -26,9 +27,7 @@ class BturlSpider(scrapy.Spider):
     #     f.write('')
 
     # """
-    @staticmethod
-    def get_url(keyword, sort, page):
-        base_url = 'https://www.bturl.so'  # bt磁力链
+    def get_url(self, keyword, sort, page):
         sortby = 'ctime'
         if sort in '创建日期':
             sortby = 'ctime'
@@ -36,14 +35,14 @@ class BturlSpider(scrapy.Spider):
             sortby = 'length'
         elif sort in '下载热度':
             sortby = 'click'
-        return base_url + '/search/' + keyword.replace(' ', '%20') + '_' + sortby + '_' + str(page) + '.html'
+        return self.base_url + '/search/' + keyword.replace(' ', '%20') + '_' + sortby + '_' + str(page) + '.html'
 
     def start_requests(self):
         try:
-            keyword = '2160p mkv'  # 搜索关键字
+            keyword = '2160p'  # 搜索关键字
             sort = '文件大小'  # 排序
-            start_page = 1  # 起始页数
-            total_page = 3  # 爬取的页数
+            start_page = 60  # 起始页数
+            total_page = 6  # 爬取的页数
             for page in range(total_page):
                 url = self.get_url(keyword, sort, start_page + page)
                 print('url', url)
@@ -83,10 +82,10 @@ class BturlSpider(scrapy.Spider):
             item['link'] = link
             # yield item
             # 处理翻译
-            str = re.findall('(.*?)\d', filename)[0]
-            message = ' '.join(str.split('.')).lower()
+            mess = re.findall('(.*?)\d', filename)[0]
+            message = ' '.join(mess.split('.')).lower()
             print(message)
-            if str.endswith(' s'):
+            if message.endswith(' s'):
                 message = message[:-2]
             item['baidu'] = message
             api = 'http://fanyi.youdao.com/openapi.do' \
