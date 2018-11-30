@@ -1,0 +1,5 @@
+function IsPC()
+{var userAgentInfo=navigator.userAgent;var Agents=new Array("iPhone","iPod","ipad","Android","mobile","blackberry","webos","incognito","webmate","bada","nokia","lg","ucweb","ios","skyfire");var flag=true;for(var v=0;v<Agents.length;v++){if(userAgentInfo.indexOf(Agents[v])>0){flag=false;break;}}
+return flag;}
+if(IsPC()){}else{}
+var playurl='http://www.114dv.com/R/'

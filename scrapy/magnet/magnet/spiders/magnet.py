@@ -9,15 +9,18 @@ from urllib.parse import quote
 import json
 
 
-class BturlSpider(scrapy.Spider):
+class MagnetSpider(scrapy.Spider):
     # 基本的参数设置
-    name = 'bturl'  # bt磁力链 bturl、ciliba、cilimao
+    name = 'magnet'  # 蜘蛛的名字
+
+    web = 'ciliba'  # bturl、ciliba、cilimao
     keyword = '2160p'  # 搜索关键字
     sort = '大小'  # 排序 （时间、热度、大小）
-    start_page = 3  # 起始页数
+    start_page = 2  # 起始页数
     total_page = 1  # 爬取的页数
     # 不需要设置的参数
     base_url = ''
+    main_xpath = ''
 
     def get_url(self, page):
         sort_dict = {
@@ -25,17 +28,22 @@ class BturlSpider(scrapy.Spider):
             'ciliba': {'时间': 'time', '大小': 'size', '热度': 'hits'},
             'cilimao': {'时间': 'created_time', '大小': 'content_size', '热度': 'download_count'},
         }
-        sort = sort_dict[self.name][self.sort]
-        if self.name == 'bturl':  # bt磁力链
+        sort = sort_dict[self.web][self.sort]
+        if self.web == 'bturl':  # bt磁力链
+            self.main_xpath = '//ul/li/h3/a/@href'
             self.base_url = 'https://www.bturl.so'
             # https://www.bturl.so/search/我不是药神_ctime_1.html
             return 'https://www.bturl.so/search/'\
                    + quote(self.keyword) + '_' + sort + '_' + str(page) + '.html'
-        elif self.name == '':  # 磁力吧
+        elif self.web == 'ciliba':  # 磁力吧
+            self.main_xpath = '//div[@class="item-title"]/h3/a/@href'
             # https://www.ciliba.biz/s/摩天营救_time_2.html
             return 'https://www.ciliba.biz/s/'\
                    + quote(self.keyword) + '_' + sort + '_' + str(page) + '.html'
-        elif self.name == 'cilimao':  # 磁力猫
+        elif self.web == 'cilimao':  # 磁力猫
+            # //*[@id="Search__content_left___2MajJ"]/div[9]/div[1]/a
+            # //*[@id="Search__content_left___2MajJ"]/div[9]/div[2]/a
+            self.main_xpath = '//*[@id="Search__content_left___2MajJ"]/div[9]/div/a/@href'
             # https://www.cilimao.cc/search?word=如懿传&sortProperties=download_count&page=3
             return 'https://www.cilimao.cc/search?word='\
                    + quote(self.keyword) + '&sortProperties=' + sort + '&page=' + str(page) + '.html'
@@ -51,7 +59,7 @@ class BturlSpider(scrapy.Spider):
 
     def parse(self, response):
         try:
-            hrefs = response.xpath('//ul/li/h3/a/@href').extract()
+            hrefs = response.xpath(self.main_xpath).extract()
             for href in hrefs:
                 href = self.base_url + href
                 print('====解析出来的链接====', href)
@@ -64,21 +72,30 @@ class BturlSpider(scrapy.Spider):
     def parse_detail(self, response):
         item = MagnetItem()
         try:
-            filename = response.xpath('//h1[@class="T1"]/text()')[0].extract()
-            item['filename'] = filename
-            detail = response.xpath('//dl[@class="BotInfo"]/p/text()')
-            length = detail[0].extract()[6:]
-            item['length'] = length
-            ctime = detail[2].extract()[6:]
-            item['ctime'] = ctime
-            click = detail[3].extract()[6:]
-            item['click'] = click
-            link = response.xpath('//dl[@class="BotInfo"]/p/a/@href')[0].extract()
-            item['link'] = link
-            # yield item
+            if self.web == 'bturl':
+                item['filename'] = response.xpath('//h1[@class="T1"]/text()')[0].extract()
+                detail = response.xpath('//dl[@class="BotInfo"]/p/text()')
+                item['length'] = detail[0].extract()[6:]
+                item['ctime'] = detail[2].extract()[6:]
+                item['click'] = detail[3].extract()[6:]
+                item['link'] = response.xpath('//dl[@class="BotInfo"]/p/a/@href')[0].extract()
+            if self.web == 'ciliba':
+                item['filename'] = response.xpath('//h1[@class="res-title"]/text()')[0].extract()
+                detail = response.xpath('//div[@class="fileDetail"]/p/text()')
+                item['length'] = detail[0].extract()[6:]
+                item['ctime'] = detail[1].extract()[6:]
+                item['click'] = response.xpath('//*[@id="hits_num"]/text()')[0].extract()  # 动态网页，取不到数值
+                item['link'] = response.xpath('//*[@id="down-link"]/@href')[0].extract()
+            if self.web == 'cilimao':
+                item['filename'] = response.xpath('//h1[@class="res-title"]/text()')[0].extract()
+                item['length'] = response.xpath('//*[@id="Information__container___2meHB"]/div[3]/div[2]/b[3]/text()')[0].extract()
+                item['ctime'] = response.xpath('//*[@id="Information__container___2meHB"]/div[3]/div[2]/b[4]/text()')[0].extract()
+                item['click'] = '未提供'
+                item['link'] = response.xpath('//*[@id="Information__container___2meHB"]/div[2]/div[2]/a/@href')[0].extract()
+
             # 处理翻译
-            mess = re.findall('(.*?)\d', filename)[0]
-            message = ' '.join(mess.split('.')).lower()
+            message = re.findall('(.*?)\d', item['filename'])[0]
+            message = ' '.join(message.split('.')).lower()
             # print(message)
             if message.endswith(' s'):
                 message = message[:-2]
@@ -98,8 +115,8 @@ class BturlSpider(scrapy.Spider):
         try:
             content = json.loads(response.text)
             fanyi = content["translation"][0]
-            item['fanyi'] = fanyi[0:20]
+            item['fanyi'] = fanyi[:30]
             yield item
         except Exception as e:
-            print('出错: ', e)
+            print('翻译出错: ', e)
         pass
